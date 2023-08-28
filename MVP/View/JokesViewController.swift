@@ -1,6 +1,6 @@
 //
 // JokesViewController.swift
-// Assignment
+// MVP
 //
 // Created by Ravi kumar BHURI SINGH on 28/06/23.
 //

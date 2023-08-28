@@ -1,6 +1,6 @@
 //
 // JokesView.swift
-// Assignment
+// MVP
 //
 // Created by Ravi kumar on 28/06/23.
 //
