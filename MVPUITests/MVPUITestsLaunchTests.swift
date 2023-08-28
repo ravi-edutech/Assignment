@@ -1,13 +1,13 @@
 //
-//  AssignmentUITestsLaunchTests.swift
-//  AssignmentUITests
+//  MVPUITestsLaunchTests.swift
+//  MVPUITests
 //
 // Created by Ravi kumar on 28/06/23.
 //
 
 import XCTest
 
-final class AssignmentUITestsLaunchTests: XCTestCase {
+final class MVPUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true

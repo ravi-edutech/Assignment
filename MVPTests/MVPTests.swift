@@ -1,14 +1,14 @@
 //
-//  AssignmentTests.swift
-//  AssignmentTests
+//  MVPTests.swift
+//  MVPTests
 //
 // Created by Ravi kumar on 28/06/23.
 //
 
 import XCTest
-@testable import Assignment
+@testable import MVP
 
-final class AssignmentTests: XCTestCase {
+final class MVPTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

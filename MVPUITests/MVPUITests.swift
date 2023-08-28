@@ -1,13 +1,13 @@
 //
-//  AssignmentUITests.swift
-//  AssignmentUITests
+//  MVPUITests.swift
+//  MVPUITests
 //
 // Created by Ravi kumar  on 28/06/23.
 //
 
 import XCTest
 
-final class AssignmentUITests: XCTestCase {
+final class MVPUITests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
