@@ -23,7 +23,7 @@ class UserCell: UITableViewCell {
         var item: User? {
         didSet {
             guard let item = item else { return }
-            setItem(item: item.name)
+            setItem(item: item.firstName + " " + item.lastName)
         }
     }
 

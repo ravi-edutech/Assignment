@@ -19,12 +19,15 @@
 		3E9DAB482A4D646F00D8697E /* UserPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E9DAB472A4D646F00D8697E /* UserPresenter.swift */; };
 		3E9DAB4A2A4D648300D8697E /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E9DAB492A4D648300D8697E /* UserCell.swift */; };
 		3E9DAB4C2A4D649B00D8697E /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E9DAB4B2A4D649B00D8697E /* HTTPClient.swift */; };
+		DB22E2E92A9FB1C300A75119 /* user-mock.json in Sources */ = {isa = PBXBuildFile; fileRef = DB22E2E82A9FB1C300A75119 /* user-mock.json */; };
+		DB22E2EB2A9FBB8900A75119 /* MockHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB22E2E62A9FB08B00A75119 /* MockHTTPClient.swift */; };
+		DBE5A0C82AA22D2A007C3CD1 /* typicode.com.cer in Resources */ = {isa = PBXBuildFile; fileRef = DBE5A0C72AA22D2A007C3CD1 /* typicode.com.cer */; };
+		DBE5A0CA2AA23F4E007C3CD1 /* dummyjson.com.cer in Resources */ = {isa = PBXBuildFile; fileRef = DBE5A0C92AA23F4E007C3CD1 /* dummyjson.com.cer */; };
 		DBF776D02A9D2ECB00E94F6F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF776CF2A9D2ECB00E94F6F /* User.swift */; };
 		DBF776D32A9D3EE500E94F6F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF776D22A9D3EE500E94F6F /* Constants.swift */; };
 		DBF776D52A9D414300E94F6F /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF776D42A9D414300E94F6F /* Post.swift */; };
 		DBF776D72A9D424E00E94F6F /* HTTPClientProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF776D62A9D424E00E94F6F /* HTTPClientProtocol.swift */; };
 		DBF776D92A9D42A200E94F6F /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF776D82A9D42A200E94F6F /* Enums.swift */; };
-		DBF776DC2A9D43BE00E94F6F /* HTTPClientFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF776DB2A9D43BE00E94F6F /* HTTPClientFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,12 +64,15 @@
 		3E9DAB472A4D646F00D8697E /* UserPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPresenter.swift; sourceTree = "<group>"; };
 		3E9DAB492A4D648300D8697E /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		3E9DAB4B2A4D649B00D8697E /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		DB22E2E62A9FB08B00A75119 /* MockHTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockHTTPClient.swift; sourceTree = "<group>"; };
+		DB22E2E82A9FB1C300A75119 /* user-mock.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "user-mock.json"; sourceTree = "<group>"; };
+		DBE5A0C72AA22D2A007C3CD1 /* typicode.com.cer */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = typicode.com.cer; sourceTree = "<group>"; };
+		DBE5A0C92AA23F4E007C3CD1 /* dummyjson.com.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = dummyjson.com.cer; sourceTree = "<group>"; };
 		DBF776CF2A9D2ECB00E94F6F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		DBF776D22A9D3EE500E94F6F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		DBF776D42A9D414300E94F6F /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		DBF776D62A9D424E00E94F6F /* HTTPClientProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClientProtocol.swift; sourceTree = "<group>"; };
 		DBF776D82A9D42A200E94F6F /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
-		DBF776DB2A9D43BE00E94F6F /* HTTPClientFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClientFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,7 +123,6 @@
 		3E9DAB0E2A4D626D00D8697E /* MVP */ = {
 			isa = PBXGroup;
 			children = (
-				DBF776DA2A9D43A800E94F6F /* Factory */,
 				DBF776D12A9D3ECF00E94F6F /* Utils */,
 				DBF776CE2A9D2EB900E94F6F /* Model */,
 				3E9DAB402A4D62A800D8697E /* View */,
@@ -133,6 +138,7 @@
 		3E9DAB252A4D627000D8697E /* MVPTests */ = {
 			isa = PBXGroup;
 			children = (
+				DB22E2E52A9FB05E00A75119 /* Mock */,
 				3E9DAB262A4D627000D8697E /* MVPTests.swift */,
 			);
 			path = MVPTests;
@@ -170,9 +176,20 @@
 		3E9DAB422A4D62DB00D8697E /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				DBE5A0C72AA22D2A007C3CD1 /* typicode.com.cer */,
+				DBE5A0C92AA23F4E007C3CD1 /* dummyjson.com.cer */,
 				3E9DAB4B2A4D649B00D8697E /* HTTPClient.swift */,
 			);
 			path = Networking;
+			sourceTree = "<group>";
+		};
+		DB22E2E52A9FB05E00A75119 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				DB22E2E62A9FB08B00A75119 /* MockHTTPClient.swift */,
+				DB22E2E82A9FB1C300A75119 /* user-mock.json */,
+			);
+			path = Mock;
 			sourceTree = "<group>";
 		};
 		DBF776CE2A9D2EB900E94F6F /* Model */ = {
@@ -192,14 +209,6 @@
 				DBF776D62A9D424E00E94F6F /* HTTPClientProtocol.swift */,
 			);
 			path = Utils;
-			sourceTree = "<group>";
-		};
-		DBF776DA2A9D43A800E94F6F /* Factory */ = {
-			isa = PBXGroup;
-			children = (
-				DBF776DB2A9D43BE00E94F6F /* HTTPClientFactory.swift */,
-			);
-			path = Factory;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -306,8 +315,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBE5A0CA2AA23F4E007C3CD1 /* dummyjson.com.cer in Resources */,
 				3E9DAB1C2A4D627000D8697E /* LaunchScreen.storyboard in Resources */,
 				3E9DAB192A4D627000D8697E /* Assets.xcassets in Resources */,
+				DBE5A0C82AA22D2A007C3CD1 /* typicode.com.cer in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,7 +348,6 @@
 				3E9DAB4A2A4D648300D8697E /* UserCell.swift in Sources */,
 				3E9DAB4C2A4D649B00D8697E /* HTTPClient.swift in Sources */,
 				DBF776D72A9D424E00E94F6F /* HTTPClientProtocol.swift in Sources */,
-				DBF776DC2A9D43BE00E94F6F /* HTTPClientFactory.swift in Sources */,
 				DBF776D02A9D2ECB00E94F6F /* User.swift in Sources */,
 				3E9DAB102A4D626D00D8697E /* AppDelegate.swift in Sources */,
 				3E9DAB122A4D626D00D8697E /* SceneDelegate.swift in Sources */,
@@ -352,7 +362,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB22E2E92A9FB1C300A75119 /* user-mock.json in Sources */,
 				3E9DAB272A4D627000D8697E /* MVPTests.swift in Sources */,
+				DB22E2EB2A9FBB8900A75119 /* MockHTTPClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

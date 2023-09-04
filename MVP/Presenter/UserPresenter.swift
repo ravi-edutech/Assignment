@@ -25,13 +25,12 @@ class UserPresenter {
     
     
     func getUsers() {
-        
-        httpClient?.request(url: URLConstants.users) { [weak self] (result:Result<[User]?,NetworkError>) in
+        httpClient?.request(url: Constants.URLConstants.users) { [weak self] (result:Result<UserData?,NetworkError>) in
             switch result {
             case .success(let users):
                 if let users = users {
                     DispatchQueue.main.async {
-                        self?.addUsers(users: users)
+                        self?.delegate?.updatedUsers(users: users.users)
                     }
                 }
             case .failure(let error):
@@ -40,27 +39,4 @@ class UserPresenter {
         } 
     }
     
-    func getPosts(){
-        httpClient?.request(url: URLConstants.posts) { [weak self] (result:Result<[Post]?, NetworkError>) in
-            switch result{
-            case .success(let posts):
-                print(posts)
-            case .failure(let error):
-                print(error)
-            }
-        }
-    }
-    
-    private func addUsers(users: [User]){
-        let userDefaults = UserDefaults.standard
-        if userDefaults.object(forKey:"users") == nil {
-            userDefaults.set(Array<User>(), forKey:"users")
-        }
-       
-        if let userJson = try? JSONEncoder().encode(users) {
-            userDefaults.set(userJson, forKey: "users")
-            self.delegate?.updatedUsers(users: users)
-        }
-        
-    }
 }

@@ -9,9 +9,12 @@ import XCTest
 @testable import MVP
 
 final class MVPTests: XCTestCase {
-
+    var usersVC:UsersViewController! = nil
+    
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
+        usersVC = UsersViewController()
+        usersVC.httpClientProtcolType = MockHTTPClient()
     }
 
     override func tearDownWithError() throws {
@@ -25,6 +28,15 @@ final class MVPTests: XCTestCase {
         // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
         // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
     }
+    
+    func testUserRequest(){
+        let presenter = UserPresenter(client: usersVC.httpClientProtcolType)
+        usersVC.userPresenter = presenter
+        let fileURL = Bundle(for: MVPTests.self).url(forResource: "user-mock", withExtension: "json")
+        let data = try! Data(contentsOf: fileURL!)
+//        usersVC.fetchUsers()
+    }
+    
 
     func testPerformanceExample() throws {
         // This is an example of a performance test case.
