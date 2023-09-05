@@ -17,7 +17,6 @@ class UserPresenter {
     
     private let httpClient:HTTPClientProtocol?
     weak var delegate: UserPresenterDelegate?
-    private var users: [User] = []
     
     init(client: HTTPClientProtocol) {
         httpClient = client
